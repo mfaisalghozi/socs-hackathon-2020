@@ -6,35 +6,53 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item mx-2">
           <a class="nav-link" href="#">Games <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mx-2">
           <a class="nav-link" href="#">Book</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mx-2">
           <a class="nav-link" href="#">Technology</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Arts</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Food & Craft</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Games</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Music</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Publishing</a>
         </li>
       </ul>
     </div>
     </div>
     
   </nav>
-<div class="container py-4">
+<div class="py-4">
     <div class="jumbotron text-center">
         <h1 class="display-4">WarungIde.co</h1>
-        <p class="lead">Selama Datang di warung ide !</p>
+        <p class="lead">Punya Ide ? Post aja di WarungIde.co, Jangan sampai ide-ide brillian mu menghilang begitu saja</p>
         <hr class="my-4">
         <p class="lead">
           <a class="btn btn-primary btn-lg" href="#" role="button">Apa sih WarungIde ?</a>
         </p>
     </div>
-    
+</div>
+<hr class="my-4">
+<div class="container py-4">
     <div class="recomendation">
         <div class="head-cat">
-            <h1 class="display-4">Recomendation</h1>
+            <h1 class="display-4 d-inline mr-3">Recomendation</h1>
+            <a href="#" >Discover More ></a>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -59,12 +77,37 @@
             </a>
           </div>
     </div>
+  </div>
+  <hr class="my-4">
+  <div class="container">
+    <div class="newest-project my-5 pb-5">
+      <div class="head-cat">
+        <h1 class="display-4 d-inline mr-3">Newest Project</h1>
+        <a href="#" >Discover More ></a>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+              <img class="card-img-top" src="https://d2ih5qgee2kfcl.cloudfront.net/content/2019/09/17/Xxs7o8/t_5d807470cbb1b_700.jpg" alt="">
+              <div class="card-body">
+                  <h4 class="card-title">Next generation of AI will conquer Human Lust</h4>
+                  <p class="card-text">Project on going ! go donate with us for best doll ever made by human. Future is here!</p>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
 
-    <div class="games my-5 pb-5" style="background-color: grey">
-        <div class="head-cat">
-            <h1 class="display-4">Games</h1>
+  </div>
+  <hr class="my-4">
+  <div class="container">
+
+    <div class="games my-5 pb-5">
+        <div class="head-cat text-center">
+          <h1 class="display-4 d-inline mr-3">Games</h1>
+          <a href="#" >Discover More ></a>
         </div>
-        <div class="row">
+        <div class="row mt-3">
             <div class="col-lg-4 d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="https://cdn57.androidauthority.net/wp-content/uploads/2020/04/FortNite-Mobile-video-screenshot-Apps-Weekly-920x470.jpg" alt="Card image cap" style="height: 13rem">
@@ -97,14 +140,17 @@
             </div>
         </div>
     </div>
-    
-    <div class="new-idea">
+  </div>
+  <hr class="my-4">
+  <div class="container py-4">
+    <div class="article-and-news">
         <div class="head-cat">
-            <h1 class="display-4">New Idea</h1>
+          <h1 class="display-4 d-inline mr-3">Article & News</h1>
+          <a href="#" >Discover More ></a>
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <div class="card">
+                <div class="card" style="height: 28rem;">
                     <img class="card-img-top" src="https://wdef.com/wp-content/uploads/2018/06/sex-robots-1.jpg" alt="" style="height: 302px">
                     <div class="card-body">
                         <h4 class="card-title">Next generation of AI will conquer Human Lust</h4>
@@ -113,7 +159,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="card">
+                <div class="card" style="height: 28rem;">
                     <img class="card-img-top" src="https://thegadgetflow.com/wp-content/uploads/2020/09/Petoi-Bittle-Palm-Size-Robot-Dog-01-1200x675.jpg" alt="" style="height: 302px">
                     <div class="card-body">
                         <h4 class="card-title">A yellow dog looks like not work at all</h4>
