@@ -42,7 +42,7 @@
   </nav>
 <div>
     <div class="jumbotron text-center">
-        <h1 class="display-4">WarungIde.co</h1>
+        <h1 class="display-4">WarungIde.com</h1>
         <p class="lead">Punya Ide ? Post aja di WarungIde.co, Jangan sampai ide-ide brillian mu menghilang begitu saja</p>
         <hr class="my-4">
         <p class="lead">
