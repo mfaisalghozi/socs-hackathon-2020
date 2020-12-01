@@ -37,7 +37,7 @@
     </div>
     
   </nav>
-<div class="py-4">
+<div>
     <div class="jumbotron text-center">
         <h1 class="display-4">WarungIde.co</h1>
         <p class="lead">Punya Ide ? Post aja di WarungIde.co, Jangan sampai ide-ide brillian mu menghilang begitu saja</p>
