@@ -32,6 +32,9 @@
         <li class="nav-item mx-2">
           <a class="nav-link" href="#">Publishing</a>
         </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Article</a>
+        </li>
       </ul>
     </div>
     </div>
