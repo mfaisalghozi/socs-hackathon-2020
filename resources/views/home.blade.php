@@ -12,7 +12,7 @@
           <a class="nav-link" href="#">Games <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Book</a>
+          <a class="nav-link" href="#">Sex tOys</a>
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link" href="#">Technology</a>
