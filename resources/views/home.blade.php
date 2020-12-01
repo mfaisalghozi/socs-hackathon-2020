@@ -9,10 +9,10 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Games <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/category">Games</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Sex tOys</a>
+          <a class="nav-link" href="#">Books</a>
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link" href="#">Technology</a>
@@ -42,7 +42,7 @@
   </nav>
 <div>
     <div class="jumbotron text-center">
-        <h1 class="display-4">WarungIde.com</h1>
+        <h1 class="display-4">WarungIde.co</h1>
         <p class="lead">Punya Ide ? Post aja di WarungIde.co, Jangan sampai ide-ide brillian mu menghilang begitu saja</p>
         <hr class="my-4">
         <p class="lead">
