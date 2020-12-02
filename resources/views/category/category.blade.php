@@ -49,13 +49,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="card my-3">
+                <a class="card my-3 text-dark" href="/idea/1" style="text-decoration: none;">
                     <img class="card-img-top" src="https://securitybrief.co.nz/uploads/story/2020/06/22/gamingggg.jpg" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Title</h4>
                         <p class="card-text">Text</p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-4">
                 <div class="card my-3">

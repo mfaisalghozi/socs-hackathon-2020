@@ -22,5 +22,7 @@ Route::get('/category', 'HomeController@category');
 
 
 Route::get('/idea/{id}', 'IdeaController@show');
+Route::get('idea/{id}/donate', 'IdeaController@showDonate');
+
 
 Auth::routes();

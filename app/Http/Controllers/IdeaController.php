@@ -45,8 +45,19 @@ class IdeaController extends Controller
      */
     public function show($id)
     {
-        return view('idea/ideaShow');
+        return view('idea/showIdea');
     }
+
+    /**
+     * Display donate page.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showDonate($id){
+        return view('donate/donate');
+    }
+
 
     /**
      * Show the form for editing the specified resource.

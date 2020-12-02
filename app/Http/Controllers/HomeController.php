@@ -27,7 +27,7 @@ class HomeController extends Controller
     }
 
     public function category(){
-        return view('category');
+        return view('category/category');
     }
 
 }
