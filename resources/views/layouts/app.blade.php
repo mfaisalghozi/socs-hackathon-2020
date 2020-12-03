@@ -115,7 +115,7 @@
                                 <a href="#!">About Us</a>
                             </li>
                             <li>
-                                <a href="#!">Our Charter</a>
+                                <a href="#!">Our Partner</a>
                             </li>
                             <li>
                                 <a href="#!">Stats</a>

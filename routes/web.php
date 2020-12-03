@@ -20,9 +20,9 @@ Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/category', 'HomeController@category');
 
-
+Route::get('/idea/create', 'IdeaController@create');
 Route::get('/idea/{id}', 'IdeaController@show');
-Route::get('idea/{id}/donate', 'IdeaController@showDonate');
+Route::get('/idea/{id}/donate', 'IdeaController@showDonate');
 
 
 Auth::routes();

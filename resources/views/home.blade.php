@@ -44,10 +44,6 @@
     <div class="jumbotron text-center">
         <h1 class="display-4">WarungIde.co</h1>
         <p class="lead">Punya Ide ? Post aja di WarungIde.co, Jangan sampai ide-ide brillian mu menghilang begitu saja</p>
-        <hr class="my-4">
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Apa sih WarungIde ?</a>
-        </p>
     </div>
 </div>
 <hr class="my-4">
@@ -55,7 +51,6 @@
     <div class="recomendation">
         <div class="head-cat">
             <h1 class="display-4 d-inline mr-3">Recomendation</h1>
-            <a href="#" >Discover More ></a>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
