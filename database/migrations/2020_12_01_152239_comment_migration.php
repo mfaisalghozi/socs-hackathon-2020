@@ -17,6 +17,7 @@ class CommentMigration extends Migration
             $table->id();
             $table->timestamps();
             $table->string('comment', 255);
+            $table->string('username', 50);
             $table->unsignedBigInteger('ideaid');
             $table->foreign('ideaid')
                     ->references('id')

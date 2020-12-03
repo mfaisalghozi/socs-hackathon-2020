@@ -23,6 +23,7 @@ class TierMigration extends Migration
                             ->onDelete('cascade');
             $table->string('tiername', 50);
             $table->string('tierdescription', 255);
+            $table->bigInteger('tierprice');
         });
     }
 
