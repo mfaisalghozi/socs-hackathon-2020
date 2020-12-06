@@ -32,15 +32,20 @@
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active border border-primary">
-                    <div class="d-block w-100" style="height: 600px;background-color: grey">Hello</div>
+                <div class="carousel-item active shadow-none p-3 mb-5 bg-light rounded">
+                    <div class="d-block w-100" style="height: 600px;">
+                      <img src="https://picsum.photos/id/1018/1110/600" class="img-fluid" alt="Responsive image">
+                    </div>
                 </div>
-                <div class="carousel-item border border-primary">
-                    <div class="d-block w-100" style="height: 600px;background-color: pink">Second Slide</div>
+                <div class="carousel-item shadow-none p-3 mb-5 bg-light rounded">
+                    <div class="d-block w-100" style="height: 600px;">
+                      <img src="https://picsum.photos/id/1043/1110/600" class="img-fluid" alt="Responsive image">
+                    </div>
                 </div>
-                <div class="carousel-item border border-primary">
-                    <div class="d-block w-100" style="height: 600px;background-color: yellow">Third 
-                        bro</div>
+                <div class="carousel-item shadow-none p-3 mb-5 bg-light rounded">
+                    <div class="d-block w-100" style="height: 600px;">
+                      <img src="https://picsum.photos/id/1006/1110/600" class="img-fluid" alt="Responsive image">
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -87,8 +92,8 @@
             <div class="col-lg-4 d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="https://cdn57.androidauthority.net/wp-content/uploads/2020/04/FortNite-Mobile-video-screenshot-Apps-Weekly-920x470.jpg" alt="Card image cap" style="height: 13rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Fortnite Box</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
@@ -97,8 +102,8 @@
             <div class="col-lg-4 d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="https://i.guim.co.uk/img/media/c6f7b43fa821d06fe1ab4311e558686529931492/168_84_1060_636/master/1060.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2441267a0824df3d55fa03ac63ec7a48" alt="Card image cap" style="height: 13rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Minecraft Tools</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
@@ -107,8 +112,8 @@
             <div class="col-lg-4 d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="https://cnet2.cbsistatic.com/img/CBUI-VXAj_uOLW2n2ApCR810_2k=/1200x630/2018/04/26/3a94f7c7-d045-43c1-84af-5334bb065d76/pubgmobilejp.jpg" alt="Card image cap" style="height: 13rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">PUBG Weapon Chain</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
@@ -127,7 +132,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="card" style="height: 28rem;">
-                    <img class="card-img-top" src="https://wdef.com/wp-content/uploads/2018/06/sex-robots-1.jpg" alt="" style="height: 302px">
+                    <img class="card-img-top" src="https://picsum.photos/id/1035/538/302" alt="" style="height: 302px">
                     <div class="card-body">
                         <h4 class="card-title">Next generation of AI will conquer Human Lust</h4>
                         <p class="card-text">Project on going ! go donate with us for best doll ever made by human. Future is here!</p>

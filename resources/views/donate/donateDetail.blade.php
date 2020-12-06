@@ -16,14 +16,20 @@
         <form method="POST" action="/donate">
             @csrf
             <div class="form-group">
-            <label for="formGroupExampleInput">Tier Package Name :</label>
-            <input type="text" readonly class="form-control-plaintext" id="formGroupExampleInput" placeholder="Example input" value="{{$tier->tiername}}">
+                <label for="formGroupExampleInput">Tier Package Name :</label>
+                <input type="text" readonly class="form-control-plaintext" name="tiername" id="formGroupExampleInput" placeholder="Example input" value="{{$tier->tiername}}">
             </div>
             <div class="form-group">
-              <label for="formGroupExampleInput2">Total Amount :</label>
-            <input type="text" readonly class="form-control-plaintext" id="formGroupExampleInput2" placeholder="Another input" value="{{$tier->tierprice}}">
+                <label label for="formGroupExampleInput2">Total Amount :</label>
+                <input type="text" readonly class="form-control-plaintext" name="totalamount" id="formGroupExampleInput2" placeholder="Another input" value="{{$tier->tierprice}}">
             </div>
-            <button type="button" class="btn btn-success">Donate</button>
+            <div class="form-group">
+                <input type="hidden" class="form-control" name="user_id" value="{{Auth::user()->id}}">
+            </div>
+            <div class="form-group">
+                <input type="hidden" class="form-control" name="donation_type" value="2">
+            </div>
+            <button type="submit" class="btn btn-success">Donate</button>
         </form>
     </div>
 </div>

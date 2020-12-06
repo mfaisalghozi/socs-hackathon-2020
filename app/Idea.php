@@ -16,10 +16,16 @@ class Idea extends Model
      * @var array
      */
     protected $fillable = [
-        'categoryid', 'userid',
-        'ideaName', 'ideadescription',
-        'qa','ideatarget','tierAmount','ideadeadline','ideaimg',
-         'currentearning','donatorcount',
+        'categoryid', 
+        'userid',
+        'ideaName', 
+        'ideadescription',
+        'qa','ideatarget',
+        'tierAmount',
+        'ideadeadline',
+        'ideaimg',
+         'currentearning',
+         'donatorcount',
     ];
 
     public function joinWithTier(){

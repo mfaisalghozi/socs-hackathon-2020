@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Idea;
-use  App\Tier;
+use App\Tier;
+use App\Donation;
 
 class DonateController extends Controller
 {
@@ -35,8 +36,14 @@ class DonateController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {   
+        Donation::create([
+            'userid' => $request->user_id,
+            'donationamount' => $request->totalamount,
+            'donationtypeid' => $request->donation_type,
+        ]);
+
+        return redirect('/home');
     }
 
     /**
