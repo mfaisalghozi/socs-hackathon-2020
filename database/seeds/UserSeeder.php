@@ -21,7 +21,6 @@ class UserSeeder extends Seeder
             'password' => 'admin',
             'phone' => 12345678910,
             'roleid' => 3,
-       
         ]);
 
     	// for($i = 1; $i <= 10; $i++){
