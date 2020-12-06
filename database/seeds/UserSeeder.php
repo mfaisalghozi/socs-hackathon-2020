@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Faker\Factory as Faker;
+// use Faker\Factory as Faker;
 use Illuminate\Support\Facades\DB;
 
 class UserSeeder extends Seeder
@@ -24,14 +24,14 @@ class UserSeeder extends Seeder
        
         ]);
 
-    	for($i = 1; $i <= 10; $i++){
-            DB::table('user')->insert([
-                'name' => $faker->name,
-                'email' => $faker->email,
-                'password' => $faker->password,
-                'phone' => $faker->numberBetween($min = 621111111111, $max=629999999999),
-                'roleid' => $faker->numberBetween($min = 1, $max=2),
-            ]);
-        }
+    	// for($i = 1; $i <= 10; $i++){
+        //     DB::table('user')->insert([
+        //         'name' => $faker->name,
+        //         'email' => $faker->email,
+        //         'password' => $faker->password,
+        //         'phone' => $faker->numberBetween($min = 621111111111, $max=629999999999),
+        //         'roleid' => $faker->numberBetween($min = 1, $max=2),
+        //     ]);
+        // }
     }
 }
