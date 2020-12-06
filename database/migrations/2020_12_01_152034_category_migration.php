@@ -15,13 +15,8 @@ class CategoryMigration extends Migration
     {
         Schema::create('Category', function (Blueprint $table) {
             $table->id();
+            $table->string('category');
             $table->timestamps();
-            $table->unsignedBigInteger('ideaid');
-            $table->foreign('ideaid')
-                    ->references('id')
-                    ->on('Idea')
-                    ->onDelete('cascade');
-            $table->string('category', 50);
         });
     }
 

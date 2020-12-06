@@ -8,33 +8,11 @@
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="/category">Games</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Books</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Technology</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Arts</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Food & Craft</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Games</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Music</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Publishing</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Article</a>
-        </li>
+        @foreach ($category as $item)
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/category/{{$item->id}}"> {{$item->category}} </a>
+          </li>
+        @endforeach
       </ul>
     </div>
     </div>

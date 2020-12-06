@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Idea;
 
 class IdeaController extends Controller
 {
@@ -44,8 +45,9 @@ class IdeaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        return view('idea/showIdea');
+    {   
+        $idea = Idea::Find($id);
+        return view('idea/showIdea', ['idea' => $idea]);
     }
 
     /**
@@ -55,7 +57,8 @@ class IdeaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function showDonate($id){
-        return view('donate/donate');
+        $idea = Idea::Find($id);
+        return view('donate/donate', ['idea' => $idea]);
     }
 
 

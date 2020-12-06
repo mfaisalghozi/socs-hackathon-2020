@@ -29,27 +29,29 @@
         <div class="row goal-info my-3">
           <div class="col-md-12">
             <h1 class="display-5">
-              Rp. 420 of Rp 69420 Goal
+              Rp.{{$idea->currentearning}} of Rp.{{$idea->ideatarget}} Goal
             </h1>
           </div>
         </div>
         <div class="row donator-info my-3">
           <div class="col-md-12">
             <h1 class="display-5">
-              5 Donator
+              {{$idea->donatorcount}} Donator
             </h1>
           </div>
         </div>
         <div class="row time-info my-3">
           <div class="col-md-12">
             <h1 class="display-5">
-              Waktu Tersisa : <br> 4 Hari 20 Jam 6 Menit 9 Detik
+              Berakhir pada : {{$idea->ideadeadline}}
+
+              {{-- Waktu Tersisa : <br> 4 Hari 20 Jam 6 Menit 9 Detik --}}
             </h1>
           </div>
         </div>
         <div class="row donate-button my-3">
           <div class="col-md-12 text-center">
-            <a href="/idea/1/donate" class="btn btn-success btn-lg">Bantu Ide Ini <i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
+            <a href="/idea/{{$idea->id}}/donate" class="btn btn-success btn-lg">Bantu Ide Ini <i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -75,30 +77,41 @@
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <h2 class="card-title">Tentang ide</h2>
+              <p class="card-text"> {{$idea->ideadescription}} </p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
           <div class="tab-pane fade show" id="tier" role="tabpanel" aria-labelledby="tier-tab">
             <div class="card-body">
-              <h5 class="card-title">SILAHKAN BELI TIER KAMI KAKA</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h2 class="card-title">Tier List</h2>
+              @foreach ($idea->joinWithTier as $tier)
+                <div class="card"> 
+                  <h4>Tier Name</h4>
+                  <p class="card-text">{{$tier->tiername}}</p>
+                  <h4>Description</h4>
+                  <p class="card-text">{{$tier->tierdescription}}</p>
+                  <h4>Price</h4>
+                  <p class="card-text">{{$tier->tierprice}}</p>
+                </div>
+              @endforeach
             </div>
           </div>
           <div class="tab-pane fade show" id="faq" role="tabpanel" aria-labelledby="faq-tab">
             <div class="card-body">
               <h5 class="card-title">SELAMAT DATANG DI FREQUENTLY ASKED QUESTION</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"> {{$idea->qa}} </p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
           <div class="tab-pane fade show" id="comment" role="tabpanel" aria-labelledby="comment-tab">
             <div class="card-body">
-              <h5 class="card-title">SELAMAT DATANG DI KOTAJA KOMENTAR RAKYAT JELATA</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h2 class="card-title">SELAMAT DATANG DI KOTAJA KOMENTAR RAKYAT JELATA</h2>
+              @foreach ($idea->joinWithComment as $comment)
+                  <h4> {{$comment->username}} </h4>
+                  <p class="card-text"> {{$comment->comment}} </p>
+              @endforeach
+              
             </div>
           </div>
         </div>
