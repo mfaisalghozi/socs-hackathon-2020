@@ -6,7 +6,7 @@
     <div class="jumbotron text-center">
         <h1 class="display-4"> {{$idea->ideaname}} </h1>
         <p class="lead">By {{$idea->joinWithUser->name}}</p>
-      </div>
+    </div>
 </div>
 
 {{-- //ADD SHOW IDEA VIEW IN HERE CODE --}}
@@ -17,20 +17,21 @@
             <h2>Support This Project</h2>
             <p>Got the idea ? now time to execute !</p>
             <div class="row tier-section">
-                <div class="col-lg-12 default-tier p-4 border border-primary bg-warning my-3">
+                <div class="col-lg-12 shadow-lg p-3 mb-5 bg-white rounded" style="background-color: #DCDCDC;">
                     <h3>Donasi suka suka disini !</h3>
                     <p>Berapa pun nilainya akan kami terima !</p>
+                    <button type="button" class="btn btn-dark"><a href="#">Donasi Sekarang</a></button>
                 </div>
 
                 @foreach ($idea->joinWithTier as $tier)
-                    <div class="col-lg-12 default-tier p-4 border border-primary bg-warning my-3">
+                    <div class="col-lg-12 shadow-lg p-3 mb-5 bg-white rounded" style="background-color: #DCDCDC;">
                         <h4>Tier Name</h4>
-                        <p class="card-text">{{$tier->tiername}}</p>
+                            <p class="card-text">{{$tier->tiername}}</p>
                         <h4>Description</h4>
-                        <p class="card-text">{{$tier->tierdescription}}</p>
+                            <p class="card-text">{{$tier->tierdescription}}</p>
                         <h4>Price</h4>
-                        <p class="card-text">{{$tier->tierprice}}</p>
-                        <button type="button" class="btn btn-dark"><a href="#">Donasi Sekarang</a></button>
+                            <p class="card-text">{{$tier->tierprice}}</p>
+                        <a class="btn btn-dark" href="/idea/{{$idea->id}}/donate/{{$tier->id}}">Donasi Sekarang</a>
                     </div>
                 @endforeach
             </div>

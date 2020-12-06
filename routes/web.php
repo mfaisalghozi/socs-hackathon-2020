@@ -24,5 +24,10 @@ Route::get('/idea/create', 'IdeaController@create');
 Route::get('/idea/{id}', 'IdeaController@show');
 Route::get('/idea/{id}/donate', 'IdeaController@showDonate');
 
+Route::get('/idea/{idea_id}/donate/{id}', 'DonateController@show');
+
+Route::post('/idea', 'IdeaController@store');
+Route::post('/donate', 'DonateController@store');
+
 
 Auth::routes();

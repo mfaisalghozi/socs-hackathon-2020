@@ -5,7 +5,7 @@
 <div>
     <div class="jumbotron text-center">
         <h1 class="display-4">About Info Section</h1>
-        <p class="lead">By nama orang disini</p>
+        
       </div>
 </div>
 

@@ -32,6 +32,7 @@ class IdeaMigration extends Migration
             $table->integer('ideatarget');
             $table->integer('currentearning');
             $table->integer('donatorcount');
+            $table->integer('tierAmount');
             $table->date('ideadeadline');
             $table->string('qa', 255);
         });

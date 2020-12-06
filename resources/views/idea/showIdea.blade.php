@@ -14,7 +14,7 @@
     <div class="row my-5 text-center">
       <div class="col-lg-12">
         <h1 class="display-4">
-          Ini Ide Gue Mana Ide Loe ?
+         {{$idea->ideaname}}
         </h1>
       </div>
     </div>
@@ -24,7 +24,7 @@
       </div>
       <div class="col-lg-8">
         <div class="progress goal-progress" style="height: 30px;">
-          <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+        <div class="progress-bar" role="progressbar" style="width: {{$result}}%;" aria-valuenow="{{$result}}" aria-valuemin="0" aria-valuemax="100">{{$result}}%</div>
         </div>
         <div class="row goal-info my-3">
           <div class="col-md-12">
@@ -86,7 +86,7 @@
             <div class="card-body">
               <h2 class="card-title">Tier List</h2>
               @foreach ($idea->joinWithTier as $tier)
-                <div class="card"> 
+                <div class="card p-3 my-3"> 
                   <h4>Tier Name</h4>
                   <p class="card-text">{{$tier->tiername}}</p>
                   <h4>Description</h4>

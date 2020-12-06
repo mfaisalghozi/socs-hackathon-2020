@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Idea;
+use App\Category;
+use App\User;
 
 class IdeaController extends Controller
 {
@@ -23,8 +26,9 @@ class IdeaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        return view('idea/createIdea');
+    {   
+        $category = Category::All();
+        return view('idea/createIdea', ['category' => $category]);
     }
 
     /**
@@ -34,8 +38,47 @@ class IdeaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {   
+        // return $request;
+        if ($request->hasFile('image')) {
+            //  Let's do everything 
+            if ($request->file('image')->isValid()) {
+                //
+                $validated = $request->validate([
+                    'ideaName' => 'required|string|max:50',
+                    'description' => 'required|string|min:10',
+                    'qa' => 'required|string|min:10',
+                    'goal' => 'required|numeric',
+                    'category' => 'required',
+                    'tierAmount' => 'required|numeric',
+                    'dateDeadline' => 'required|date_format:Y-m-d',
+                    'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                ]);
+                $extension = $request->image->extension();
+                $request->image->storeAs('/public', $validated['ideaName'].".".$extension);
+                $url = Storage::url($validated['ideaName'].".".$extension);
+                $idea = Idea::create([
+                   'categoryid' => $request->category,
+                   'userid' => $request->user_id,
+                   'ideaName' => $request->ideaName,
+                   'ideadescription' => $request->description,
+                   'qa' => $request->qa,
+                   'ideatarget' => $request->goal,
+                   'tierAmount' => $request->tierAmount,
+                   'ideadeadline' => $request->dateDeadline,
+                   'ideaimg' => $url,
+                   'currentearning' => 0,
+                   'donatorcount' => 0
+                ]);
+                // Session::flash('success', "Success!");
+                return redirect('/home');
+            }else{
+                return $request;
+            }
+        }
+        else{
+            return $request;
+        } 
     }
 
     /**
@@ -47,7 +90,11 @@ class IdeaController extends Controller
     public function show($id)
     {   
         $idea = Idea::Find($id);
-        return view('idea/showIdea', ['idea' => $idea]);
+
+        //CACULATE FOR PROGRESSING BAR
+        $result = round(($idea->currentearning/$idea->ideatarget) * 100);
+
+        return view('idea/showIdea', ['idea' => $idea, 'result' => $result]);
     }
 
     /**

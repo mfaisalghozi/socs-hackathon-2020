@@ -10,6 +10,18 @@ class Idea extends Model
 
     public $table = 'idea';
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'categoryid', 'userid',
+        'ideaName', 'ideadescription',
+        'qa','ideatarget','tierAmount','ideadeadline','ideaimg',
+         'currentearning','donatorcount',
+    ];
+
     public function joinWithTier(){
         return $this->hasMany('App\Tier', 'ideaid', 'id');
     }

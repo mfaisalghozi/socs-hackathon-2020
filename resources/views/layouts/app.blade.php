@@ -69,6 +69,14 @@
                                     </a>
     
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        @if(Auth::user()->roleid == 2)
+                                        <a class="dropdown-item" href="/idea/create">
+                                            {{ __('Create New Idea') }}
+                                        </a>
+                                        @endif
+                                        <a class="dropdown-item" href="#">
+                                            {{ __('Edit Profile') }}
+                                        </a>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
