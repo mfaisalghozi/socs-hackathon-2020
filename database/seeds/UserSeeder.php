@@ -13,7 +13,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create('id_ID');
+        // $faker = Faker::create('id_ID');
         
         DB::table('user')->insert([
             'name' => 'Admin niBos',
