@@ -68,7 +68,7 @@ class IdeaController extends Controller
                    'ideadeadline' => $request->dateDeadline,
                    'ideaimg' => $url,
                    'currentearning' => 0,
-                   'donatorcount' => 0
+                   'donatorcount' => 0,
                 ]);
                 // Session::flash('success', "Success!");
                 return redirect('/home');
