@@ -37,14 +37,14 @@ class UserSeeder extends Seeder
             'roleid' => 1,
         ]);
 
-    	// for($i = 1; $i <= 10; $i++){
-        //     DB::table('user')->insert([
-        //         'name' => $faker->name,
-        //         'email' => $faker->email,
-        //         'password' => $faker->password,
-        //         'phone' => $faker->numberBetween($min = 621111111111, $max=629999999999),
-        //         'roleid' => $faker->numberBetween($min = 1, $max=2),
-        //     ]);
-        // }
+    	for($i = 1; $i <= 10; $i++){
+            DB::table('user')->insert([
+                'name' => 'budi irawan',
+                'email' => 'budiganteng@gmail.com',
+                'password' => 'budisejahteraselalu',
+                'phone' => 123123123,
+                'roleid' => 2,
+            ]);
+        }
     }
 }
