@@ -15,7 +15,7 @@ class DonationSeeder extends Seeder
         DB::table('Donation')->insert([
             ['userid' => 2, 
             'donationamount'=>'30000', 
-            'donatidonationtypeid'=>2],
+            'donationtypeid'=>2],
             ['userid' => 2, 
             'donationamount'=>'70000', 
             'donationtypeid'=>1],
