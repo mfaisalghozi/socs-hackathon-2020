@@ -20,7 +20,7 @@ class UserMigration extends Migration
             $table->string('email', 50);
             $table->string('password', 255);
             $table->bigInteger('phone');
-            $table->integer('roleid')->default('1');
+            $table->integer('roleid')->default('2');
         });
     }
 
