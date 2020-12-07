@@ -29,7 +29,7 @@
             @foreach ($categoryList->joinWithIdea as $list)
                 <div class="col-md-4">
                     <div class="card my-3">
-                        <img class="card-img-top" src="{{$list->ideaimg}}">
+                        <img class="card-img-top" src="https://picsum.photos/288/163">
                         <div class="card-body">
                             <h4 class="card-title"> {{$list->ideaname}} </h4>
                             <p class="card-text"> {{$list->ideadescription}} </p>
