@@ -38,7 +38,7 @@ class UserSeeder extends Seeder
         ]);
 
     	for($i = 1; $i <= 10; $i++){
-            DB::table('user')->insert([
+            DB::table('User')->insert([
                 'name' => 'budi irawan',
                 'email' => 'budiganteng@gmail.com',
                 'password' => 'budisejahteraselalu',
