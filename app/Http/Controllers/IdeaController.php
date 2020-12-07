@@ -60,7 +60,7 @@ class IdeaController extends Controller
                 $idea = Idea::create([
                    'categoryid' => $request->category,
                    'userid' => $request->user_id,
-                   'ideaName' => $request->ideaName,
+                   'ideaname' => $request->ideaName,
                    'ideadescription' => $request->description,
                    'qa' => $request->qa,
                    'ideatarget' => $request->goal,
