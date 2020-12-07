@@ -99,24 +99,21 @@
           </div>
           <div class="tab-pane fade show" id="faq" role="tabpanel" aria-labelledby="faq-tab">
             <div class="card-body">
-              <h5 class="card-title">SELAMAT DATANG DI FREQUENTLY ASKED QUESTION</h5>
+              <h2 class="card-title">Frequently Asked Question</h2>
               <p class="card-text"> {{$idea->qa}} </p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
           <div class="tab-pane fade show" id="comment" role="tabpanel" aria-labelledby="comment-tab">
             <div class="card-body">
-              <h2 class="card-title">SELAMAT DATANG DI KOTAJA KOMENTAR RAKYAT JELATA</h2>
+              <h2 class="card-title">Komentar</h2>
               @foreach ($idea->joinWithComment as $comment)
                   <h4> {{$comment->username}} </h4>
                   <p class="card-text"> {{$comment->comment}} </p>
               @endforeach
-              
             </div>
           </div>
         </div>
-
-        
       </div>
     <hr class="my-4">
 </div>
