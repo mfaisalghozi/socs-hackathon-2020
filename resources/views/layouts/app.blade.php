@@ -115,10 +115,12 @@
                         <div class="h-100 d-flex align-items-center justify-content-center">
                             <div class="row pt-3 justify-content-center">
                                 <div class="col-lg-12">
-                                    <h5 class="text-uppercase">Donasi ke warungide.co</h5>
+                                    <h5 class="text-uppercase">Donasi ke warungide.co
+                                    </h5>
                                 </div>
                                 <div class="col-lg-6">
-                                    <p class="">Donasi ke warungide.co agar kami dapat terus melakukan inovasi dan membantu mewujudkan ide-ide mu! (Developer butuh makan)</p>
+                                    <p class="">Donasi ke warungide.co agar kami dapat terus melakukan inovasi dan membantu mewujudkan ide-ide mu!
+                                    </p>
                                 </div>
                             </div>
                             

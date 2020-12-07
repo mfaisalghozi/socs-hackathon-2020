@@ -29,11 +29,15 @@
             @foreach ($categoryList->joinWithIdea as $list)
                 <div class="col-md-4">
                     <div class="card my-3">
-                        <img class="card-img-top" src="https://securitybrief.co.nz/uploads/story/2020/06/22/gamingggg.jpg" alt="">
+                        <img class="card-img-top" src="{{$list->ideaimg}}">
                         <div class="card-body">
                             <h4 class="card-title"> {{$list->ideaname}} </h4>
                             <p class="card-text"> {{$list->ideadescription}} </p>
-                            <button type="button" class="btn btn-dark"><a href="/idea/{{$list->id}} ">More Info</a></button>
+                            <button type="button" class="btn btn-dark">
+                              <a href="/idea/{{$list->id}} ">
+                                More Info
+                              </a>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -71,8 +71,8 @@
           <div class="card">
               <img class="card-img-top" src="https://d2ih5qgee2kfcl.cloudfront.net/content/2019/09/17/Xxs7o8/t_5d807470cbb1b_700.jpg" alt="">
               <div class="card-body">
-                  <h4 class="card-title">Next generation of AI will conquer Human Lust</h4>
-                  <p class="card-text">Project on going ! go donate with us for best doll ever made by human. Future is here!</p>
+                  <h4 class="card-title">Generation AI by Deep Mind Powered by Google</h4>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis sint consectetur assumenda mollitia, recusandae qui architecto laborum aspernatur ipsa nobis!!</p>
               </div>
           </div>
       </div>
@@ -135,7 +135,7 @@
                     <img class="card-img-top" src="https://picsum.photos/id/1035/538/302" alt="" style="height: 302px">
                     <div class="card-body">
                         <h4 class="card-title">Next generation of AI will conquer Human Lust</h4>
-                        <p class="card-text">Project on going ! go donate with us for best doll ever made by human. Future is here!</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sit sed enim, vero incidunt nobis eveniet laboriosam iste ex !</p>
                     </div>
                 </div>
             </div>
