@@ -45,7 +45,7 @@ class IdeaController extends Controller
             if ($request->file('image')->isValid()) {
                 //
                 $validated = $request->validate([
-                    'ideaName' => 'required|string|max:50',
+                    'ideaname' => 'required|string|max:50',
                     'description' => 'required|string|min:10',
                     'qa' => 'required|string|min:10',
                     'goal' => 'required|numeric',
@@ -55,12 +55,12 @@ class IdeaController extends Controller
                     'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
                 ]);
                 $extension = $request->image->extension();
-                $request->image->storeAs('/public', $validated['ideaName'].".".$extension);
-                $url = Storage::url($validated['ideaName'].".".$extension);
+                $request->image->storeAs('/public', $validated['ideaname'].".".$extension);
+                $url = Storage::url($validated['ideaname'].".".$extension);
                 $idea = Idea::create([
                    'categoryid' => $request->category,
                    'userid' => $request->user_id,
-                   'ideaname' => $request->ideaName,
+                   'ideaname' => $request->ideaname,
                    'ideadescription' => $request->description,
                    'qa' => $request->qa,
                    'ideatarget' => $request->goal,

@@ -16,7 +16,7 @@
             <div class="col-md-8 py-3">
                 <div class="form-group">
                     <label for="ideaName">Idea Name</label>
-                    <input type="text" class="form-control" id="ideaName" class="form-control @error('ideaName') is-invalid @enderror" name="ideaName" required autocomplete="" autofocus>
+                    <input type="text" class="form-control" id="ideaName" class="form-control @error('ideaName') is-invalid @enderror" name="ideaname" required autocomplete="" autofocus>
 
                     @error('name')
                         <span class="invalid-feedback" role="alert">
