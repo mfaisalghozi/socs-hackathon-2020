@@ -20,8 +20,9 @@ class IdeaSeeder extends Seeder
                     $data[$k] = [
                         'userid' => $i+1, 
                         'categoryid' => $j+1, 
-                        'ideaname' => 'Ini Idea ke '.($i+1), 
-                        'ideaimg' => 'https://picsum.photos/288/163', 'ideadescription'=>'Lorem ipsum dolor, sit amet consectetur adipisicing elit!', 
+                        'ideaname' => 'Ini Idea ke '.($k+1), 
+                        'ideaimg' => 'https://picsum.photos/288/163', 
+                        'ideadescription'=>'Lorem ipsum dolor, sit amet consectetur adipisicing elit!', 
                         'ideatarget'=>'1450000', 
                         'currentearning'=>'1000000', 
                         'donatorcount'=>200,
