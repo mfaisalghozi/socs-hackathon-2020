@@ -40,12 +40,12 @@
             <div class="row rules-section">
                 <h4 class="font-weight-bold">Donating isn't beli.</h4>
                 <p class="font-weight-text">You're supporting ambitious creative work.
-                    Kickstarter isn’t a store. We don’t guarantee projects or investigate a creator’s ability to complete them. It’s the responsibility of the creator to complete their project as promised, and the claims of the project are theirs alone.
+                    donating isn’t a store. We don’t guarantee projects or investigate a creator’s ability to complete them. It’s the responsibility of the creator to complete their project as promised, and the claims of the project are theirs alone.
                 </p>
             </div>
             <div class="row ads p-3 px-4">
                 <div class="col-lg-12 border border-primary bg-secondary my-3 rounded" style="height: 250px">
-                    <h5>Iklan disini bos</h5>
+                    <h5>Iklan disini</h5>
                 </div>
             </div>
         </div>

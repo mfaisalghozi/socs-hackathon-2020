@@ -134,7 +134,7 @@
                 <div class="card" style="height: 28rem;">
                     <img class="card-img-top" src="https://picsum.photos/id/1035/538/302" alt="" style="height: 302px">
                     <div class="card-body">
-                        <h4 class="card-title">Next generation of AI will conquer Human Lust</h4>
+                        <h4 class="card-title">Next generation of AI will conquer Human Anger</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sit sed enim, vero incidunt nobis eveniet laboriosam iste ex !</p>
                     </div>
                 </div>
