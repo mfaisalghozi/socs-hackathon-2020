@@ -8,7 +8,7 @@ class Idea extends Model
 {
     //
 
-    public $table = 'idea';
+    public $table = 'Idea';
 
     /**
      * The attributes that are mass assignable.
