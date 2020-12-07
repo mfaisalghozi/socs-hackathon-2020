@@ -22,6 +22,20 @@ class UserSeeder extends Seeder
             'phone' => 12345678910,
             'roleid' => 3,
         ]);
+        DB::table('User')->insert([
+            'name' => 'Creator Ganteng',
+            'email' => 'creator99@gmail.com',
+            'password' => 'creator',
+            'phone' => 88210248911,
+            'roleid' => 2,
+        ]);
+        DB::table('User')->insert([
+            'name' => 'Member idaman',
+            'email' => 'membermulia@gmail.com',
+            'password' => 'member',
+            'phone' => 34561234566,
+            'roleid' => 1,
+        ]);
 
     	// for($i = 1; $i <= 10; $i++){
         //     DB::table('user')->insert([
