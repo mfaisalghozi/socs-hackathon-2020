@@ -28,7 +28,7 @@
 <div class="container py-4">
     <div class="recomendation">
         <div class="head-cat">
-            <h1 class="display-4 d-inline mr-3">Recomendation</h1>
+            <h1 class="display-4 d-inline mr-3">Recommendation</h1>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">

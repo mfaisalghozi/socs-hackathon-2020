@@ -15,7 +15,7 @@ class IdeaSeeder extends Seeder
         // HTR T_T
 
         for($i=0;$i<3;$i++){
-            for($j=0;$j<7;j++){
+            for($j=0;$j<7;$j++){
                 for($k=0;$k<10;$k++){
                     $data[$i] = [
                         'userid' => $i+1, 
