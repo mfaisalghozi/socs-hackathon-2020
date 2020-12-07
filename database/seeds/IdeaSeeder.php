@@ -17,7 +17,7 @@ class IdeaSeeder extends Seeder
         for($i=0;$i<3;$i++){
             for($j=0;$j<7;$j++){
                 for($k=0;$k<10;$k++){
-                    $data[$i] = [
+                    $data[$k] = [
                         'userid' => $i+1, 
                         'categoryid' => $j+1, 
                         'ideaname' => 'Ini Idea ke '.($i+1), 
@@ -30,8 +30,8 @@ class IdeaSeeder extends Seeder
                         'qa'=>'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae !',
                         ];
                 }
+                DB::table('Idea')->insert($data);
             }
         }
-        DB::table('Idea')->insert($data);
-    }
+
 }
