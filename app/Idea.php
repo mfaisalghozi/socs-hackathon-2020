@@ -18,7 +18,7 @@ class Idea extends Model
     protected $fillable = [
         'categoryid', 
         'userid',
-        'ideaName', 
+        'ideaname', 
         'ideadescription',
         'qa','ideatarget',
         'tierAmount',

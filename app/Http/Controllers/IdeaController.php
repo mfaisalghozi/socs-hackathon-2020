@@ -39,7 +39,6 @@ class IdeaController extends Controller
      */
     public function store(Request $request)
     {   
-        // return $request;
         if ($request->hasFile('image')) {
             //  Let's do everything 
             if ($request->file('image')->isValid()) {
@@ -57,10 +56,10 @@ class IdeaController extends Controller
                 $extension = $request->image->extension();
                 $request->image->storeAs('/public', $validated['ideaname'].".".$extension);
                 $url = Storage::url($validated['ideaname'].".".$extension);
-                $idea = Idea::create([
+                $idea = Idea::create([ 
+                   'ideaname' => $request->ideaname,
                    'categoryid' => $request->category,
                    'userid' => $request->user_id,
-                   'ideaname' => $request->ideaname,
                    'ideadescription' => $request->description,
                    'qa' => $request->qa,
                    'ideatarget' => $request->goal,
