@@ -28,10 +28,10 @@ class IdeaSeeder extends Seeder
                         'tierAmount'=>3, 
                         'ideadeadline'=>'2020-12-12', 
                         'qa'=>'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae !',
-                        ];
+                    ];
                 }
                 DB::table('Idea')->insert($data);
             }
         }
-
+    }
 }
