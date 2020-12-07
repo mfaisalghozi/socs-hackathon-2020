@@ -12,7 +12,7 @@ class TierSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('tier')->insert([
+        DB::table('Tier')->insert([
             ['ideaid' => 3, 'tiername'=>'Dora-rinho', 'tierdescription'=>'Support kami dengan minimal Rp500.000 dan dapatkan 1 Pintu Kemana Saja setelah selesai produksi.', 'tierprice'=>'500000'],
             ['ideaid' => 3, 'tiername'=>'El Matadora', 'tierdescription'=>'Support kami dengan minimal Rp1.000.000 dan dapatkan 2 Pintu Kemana Saja beserta 1 Goodie Bag setelah selesai produksi.', 'tierprice'=>'1000000'],
             ['ideaid' => 3, 'tiername'=>'Dora-nikov', 'tierdescription'=>'Support kami dengan minimal Rp2.000.000 dan dapatkan 3 Pintu Kemana Saja beserta 5 Goodie Bag setelah selesai produksi.', 'tierprice'=>'2000000'],

@@ -12,7 +12,7 @@ class DonationSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('donation')->insert([
+        DB::table('Donation')->insert([
             ['userid' => 2, 'donationamount'=>'30000', 'donationTypeID'=>'2'],
             ['userid' => 2, 'donationamount'=>'70000', 'donationTypeID'=>'1'],
             ['userid' => 4, 'donationamount'=>'30000', 'donationTypeID'=>'1'],
