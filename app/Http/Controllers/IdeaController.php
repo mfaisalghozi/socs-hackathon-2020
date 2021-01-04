@@ -103,6 +103,7 @@ class IdeaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function showDonate($id){
+        
         $idea = Idea::Find($id);
         return view('donate/donate', ['idea' => $idea]);
     }

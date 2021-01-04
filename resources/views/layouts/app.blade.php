@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ secure_asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -18,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,12 +27,13 @@
 
     {{-- Secure Assett --}}
     <link rel="stylesheet" href="{{ secure_asset('css/AdminLTE.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/AdminLTE.min.css') }}">
 
     {{-- Favicon --}}
-    <link rel="apple-touch-icon" sizes="180x180" href="public\img\apple-touch-icon.png ">
-    <link rel="icon" type="image/png" sizes="32x32" href="public\img\favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public\img\favicon-16x16.png">
-    <link rel="manifest" href="public\img\site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png ">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
 
     <style>
         html, body {
