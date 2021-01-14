@@ -54,8 +54,7 @@ class DonateController extends Controller
      */
     public function show($idea_id, $tier_id)
     {   
-        $this->middleware('auth');
-        
+
         $idea = Idea::Find($idea_id);
         $tier = Tier::Find($tier_id);
         return view('donate/donateDetail', ['idea'=> $idea, 'tier'=>$tier]);
